@@ -1,0 +1,85 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+
+  .heading {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .heading h1 {
+    font-size: 36px;
+    color: #00698f;
+  }
+
+  .gallery {
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .gallery img {
+    width: 250px;
+    height: 200px;
+    margin: 10px;
+    object-fit: cover;
+    cursor: pointer;
+    border: 2px solid #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+
+  .modal {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+  }
+
+  .modal img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Moves the image to the center of the modal by translating it 50% to the left and 50% up from its current position, and then translating it back 50% to the right and 50% down. */
+    max-width: 80%;
+    max-height: 80%;
+    border: 2px solid #fff;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  }
+
+  .modal:target { /* This line makes the modal visible when it is the target of the URL, i.e. when the user clicks on an image. */
+    display: block;
+  }
+
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+  }
+  /* Desktop Version: 4x3 */ @media (min-width: 1025px) { 
+    .gallery {
+       grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: auto;
+       } 
+      } /* Tablet Version: 3x4 */ @media (min-width: 768px) and (max-width: 1024px) {
+         .gallery { 
+          grid-template-columns: repeat(3, 1fr);
+           grid-template-rows: auto;
+           } 
+          }
+          /* Mobile Version: 2x6 */ @media (max-width: 767px) {
+             .gallery {
+               grid-template-columns: repeat(2, 1fr);
+                grid-template-rows: auto; } 
+              }
