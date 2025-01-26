@@ -4,7 +4,7 @@ const CACHE_NAME = "my-cache-v1";
 // List of assets to cache
 const ASSETS = [
   "/", // Cache the root directory
-  "/index/index.html",
+  "/index.html",
   "/styles/index.css",
   "/scripts/script.js",
   "/favicons/favicon.ico",
