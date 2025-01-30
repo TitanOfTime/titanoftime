@@ -1,0 +1,417 @@
+/* Global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #ff3d3d, #111); /* Changes from red to black gradient background */
+    color: #fff; 
+    line-height: 1.6;
+}
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between; /* Distributes items horizontally with equal space*/
+    align-items: center;
+    background: rgba(0, 0, 0, 0.7); 
+    color: #fff;
+    padding: 1rem 2rem;
+    position: relative; /* Makes the header element positioned relative to its normal position */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); 
+}
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 1rem; /* Space between logo and store name */
+}
+header .logo img {
+    height: 40px; 
+    width: auto;
+    border-radius: 50px;
+}
+header .logo h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #ff4081; 
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7); /* Glowing text effect */
+}
+.nav-menu {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+.nav-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 1.5rem;
+}
+.nav-menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+/* Hover effect on navbar links */
+.nav-menu ul li a:hover {
+    color: #ff4081; 
+    text-decoration: underline; 
+    text-decoration-color: #ff4081; 
+    text-decoration-thickness: 2px; 
+    text-underline-offset: 5px; 
+    transform: translateY(-2px); 
+    transition: color 0.3s ease, transform 0.3s ease, text-decoration-color 0.3s ease; /* Smooth transition */
+}
+/* Hamburger menu for mobile view */
+.hamburger {
+    display: flex;
+    flex-direction: column; /* DIsplay hamburger menu items vertically on mobile */
+    gap: 0.4rem;
+    cursor: pointer;
+}
+.hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+    border-radius: 3px;
+}
+/* Hide checkbox */
+.menu-toggle {
+    display: none;
+}
+/* Change background when menu is clicked */
+.menu-toggle:checked ~ .nav-menu {  
+    display: flex;
+    background: linear-gradient(135deg, #ff3d3d, #111); /* Changes from red to black gradient */
+    padding: 1rem 0;
+}
+/* Change link hover effect inside hamburger menu */
+.menu-toggle:checked + .hamburger + .nav-menu ul li a:hover { 
+    background: rgba(255, 64, 129, 0.6); 
+    color: #fff; 
+    transform: scale(1.05); /* Small zoom effect */
+}
+main {
+    padding: 2rem;
+}
+main h2 {
+    color: #bb9fa9; 
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+section {
+    margin-bottom: 2rem;
+}
+.intro {
+    text-align: center;
+    background-image: url('../images/heroimg.jpg'); /* Displays the background image */
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; 
+    width: 100%; 
+    height: 45vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem; 
+    position: relative;
+    color: #fff;
+    transition: background 0.3s ease-in-out; /* Smooth transition for hover effect */
+    flex-direction: column; /* Make text display vertically */
+}
+.intro h2 {
+    color: #ff4081; 
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+.intro p {
+    font-size: 1.1rem;
+    color: #ddd; 
+}
+.intro:hover {
+    background-position: center top; /* Move the background image on hover */
+    background-size: 120%; 
+}
+.features {
+    display: flex;
+    flex-wrap: wrap; /* Allows the features to wrap on to the next line */
+    gap: 1rem;
+    justify-content: space-between;
+}
+.feature {
+    flex: 1 1 calc(33.33% - 1rem); /*  Calculates the width for each feature in a row. It takes 33.33% of the container's width and subtracts 1rem (margin) from it. */
+    background: #1a1a1a; 
+    border: 1px solid #444;
+    border-radius: 8px; /* Rounded edges of border */
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for scale and shadow on hover */
+}
+.feature a {
+    text-decoration: none;
+    color: inherit; /* Inherits the colour from the parent element */    
+}
+.feature:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(255, 64, 129, 0.8); 
+}
+.feature img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+}
+.feature h3 {
+    color: #ff4081; 
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+.feature p {
+    color: #bbb; 
+    font-size: 1rem;
+}
+.lists {
+    text-align: left;
+}
+.lists h2, .lists h3 {
+    color: #ff4081; 
+    margin-bottom: 1rem;
+}
+.lists ul, .lists ol {
+    margin-left: 2rem;
+}
+.lists ul li, .lists ol li {
+    margin-bottom: 0.5rem;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+table th, table td {
+    border: 1px solid #444;
+    padding: 1rem;
+    text-align: center;
+}
+table th {
+    background: #ff4081; 
+    color: #fff;
+}
+table tfoot td {
+    font-weight: bold;
+}
+/* Grids */
+.grid, .games-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: space-between;
+}
+.product, .game {
+    position: relative;
+    flex: 1 1 calc(33.33% - 1rem);
+    background: #1a1a1a; 
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.product:hover, .game:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(255, 64, 129, 0.8); 
+}
+.product img, .game img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+.hover-text {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 0.5rem;
+    display: none;
+    text-align: center;
+    font-size: 0.9rem;
+}
+.product:hover .hover-text, .game:hover .hover-text {
+    display: block;
+}
+.branches {
+    display: flex;
+    flex-direction: column; 
+    gap: 2rem; 
+    justify-content: flex-start; /* Keep the title at the top */
+    margin-top: 2rem; 
+}
+.branches_heading {
+    color: #bb93a0; 
+    font-size: 2rem; 
+    margin-bottom: 1.5rem; 
+    width: 100%; 
+    text-align: center;
+}
+.branch1, .branch2 {
+    flex: 1 1 100%; /* Make each branch take full width on mobile view */
+    display: flex;
+    flex-direction: column; 
+    gap: 1rem; 
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+    background: #1a1a1a;
+    border-radius: 8px;
+}
+.branch1 h3, .branch2 h3 {
+    font-size: 1.8rem;
+    color: #ff4081; 
+}
+.branch1 p, .branch2 p {
+    color: #bbb; 
+}
+.branch1 img, .branch2 img, .branch1 iframe, .branch2 iframe {
+    width: 100%; 
+    height: auto; 
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+.branch1 img:hover, .branch2 img:hover, .branch1 iframe:hover, .branch2 iframe:hover {
+    transform: scale(1.05);
+}
+/* Form styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+form label {
+    font-weight: bold;
+    color: #ff4081; 
+}
+form input, form textarea, form button {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border: 1px solid #444;
+    border-radius: 4px;
+}
+form button {
+    background: #ff4081; 
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+form button:hover {
+    background: #e40057; 
+}
+/* Footer styles */
+footer {
+    background: #222;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+footer .social-media {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end; /* Align social media icons to the right */
+}
+footer .social-icon img {
+    width: 20px; 
+    height: auto;
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; /* Smooth transition for scale and brightness */
+}
+footer .social-icon img:hover {
+    transform: scale(1.1); 
+    filter: brightness(1.2); /* Brightens the icons on hover */
+}
+/* Mobile view styles */
+@media (max-width: 768px) {
+    .hamburger {
+        display: flex;
+    }
+    .nav-menu {
+        display: none;
+        flex-direction: column;
+        background: #333;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: 100%;
+        z-index: 1;
+    }
+    .menu-toggle:checked + .hamburger + .nav-menu {
+        display: flex;
+        background: linear-gradient(135deg, #ff3d3d, #111); 
+    }
+    .nav-menu ul {
+        flex-direction: column;
+        gap: 0;
+    }
+    .nav-menu ul li a {
+        padding: 1rem;
+        text-align: center;
+        display: block;
+    }
+    .nav-menu ul li a:hover {
+        background: #444;
+    }
+    .features, .grid, .games-flex {
+        flex-direction: column;
+    }
+    .feature, .product, .game {
+        flex: 1 1 100%;
+    }
+    footer .social-media {
+        justify-content: flex-end;
+        gap: 0.5rem;
+    } 
+}
+/* Desktop view styles */
+@media (min-width: 769px) {
+    .footer {
+        margin: 0;
+    }
+    .hamburger {
+        display: none;
+    }
+    .nav-menu {
+        display: flex;
+        flex-direction: row;
+    }
+    .nav-menu ul {
+        flex-direction: row;
+        gap: 1.5rem;
+    }
+    .feature, .product, .game {
+        flex: 1 1 calc(33.33% - 1rem);  
+    }
+    .features, .grid, .games-flex {
+        justify-content: space-between;
+    }
+    .branches {
+        flex-direction: row; /* Display branches side by side on desktop */
+        justify-content: space-between; 
+    }
+    .branch1, .branch2 {
+        flex: 1 1 calc(50% - 1rem); /* Each branch takes 50% of the container's width minus space for gap */
+        display: flex;
+        flex-direction: column; 
+        gap: 1rem; 
+    }
+    .branch1 img, .branch2 img {
+        height: 200px; 
+        object-fit: cover; /* Makes images fit within the area */
+    }
+    .branch1 iframe, .branch2 iframe {
+        height: 200px; 
+    }
+}
