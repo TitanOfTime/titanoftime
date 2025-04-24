@@ -1,0 +1,251 @@
+[
+    {
+      "id": "001",
+      "name": "Intel Core i9-14900K",
+      "price": 130000,
+      "image": "images/p1.jpg",
+      "category": "Processors",
+      "description": "Top-tier performance, ideal for demanding tasks and high-end gaming. High core/thread count, pushing clock speeds."
+    },
+    {
+      "id": "002",
+      "name": "Intel Core i7-14700K",
+      "price": 110000,
+      "image": "images/p2.jpg",
+      "category": "Processors",
+      "description": "High-performance processor for gaming and high-end applications. High core/thread count, pushing clock speeds."
+    },
+    {
+      "id": "003",
+      "name": "Intel Core i5-14600K",
+      "price": 80000,
+      "image": "images/p3.jpg",
+      "category": "Processors",
+      "description": "Top-tier performance, ideal for demanding tasks and high-end gaming. High core/thread count, pushing clock speeds."
+    },
+    {
+      "id": "004",
+      "name": "AMD Ryzen 9 7950X3D",
+      "price": 70000,
+      "image": "images/p4.jpg",
+      "category": "Processors",
+      "description": "High-performance processor for gaming and high-end applications. High core/thread count, pushing clock speeds."
+    },
+    {
+      "id": "005",
+      "name": "AMD Ryzen 7 7800X3D",
+      "price": 100000,
+      "image": "images/p5.jpg",
+      "category": "Processors",
+      "description": "Top-tier performance, ideal for demanding tasks and high-end gaming. High core/thread count, pushing clock speeds."
+    },
+    {
+      "id": "006",
+      "name": "AMD Ryzen 7 5800X3D",
+      "price": 120000,
+      "image": "images/p6.jpg",
+      "category": "Processors",
+      "description": "High-performance processor for gaming and high-end applications. High core/thread count, pushing clock speeds."
+    },
+    {
+      "id": "007",
+      "name": "AMD Ryzen 5 7600X",
+      "price": 80000,
+      "image": "images/p7.jpg",
+      "category": "Processors",
+      "description": "Top-tier performance, ideal for demanding tasks and high-end gaming. High core/thread count, pushing clock speeds."
+    },
+    {
+      "id": "008",
+      "name": "Intel Core i5-13400F",
+      "price": 70000,
+      "image": "images/p8.jpg",
+      "category": "Processors",
+      "description": "High-performance processor for gaming and high-end applications. High core/thread count, pushing clock speeds."
+    },
+    {
+      "id": "009",
+      "name": "Nvidia GeForce RTX 5090",
+      "price": 300000,
+      "image": "images/g1.jpg",
+      "category": "Graphic Cards",
+      "description": "Top-tier performance, ideal for demanding tasks and high-end gaming. High core/thread count, pushing clock speeds."
+    },
+    {
+      "id": "010",
+      "name": "Nvidia GeForce RTX 4080 Super",
+      "price": 200000,
+      "image": "images/g2.jpg",
+      "category": "Graphic Cards",
+      "description": "High-performance 4k gaming and high-end applications. High core/thread count, pushing clock speeds."
+    },
+    {
+      "id": "011",
+      "name": "Nvidia GeForce RTX 3090",
+      "price": 150000,
+      "image": "images/g3.jpg",
+      "category": "Graphic Cards",
+      "description": "Top-tier performance, ideal for demanding tasks and high-end gaming. High core/thread count, pushing clock speeds."
+    },
+    {
+      "id": "012",
+      "name": "Nvidia GeForce RTX 4060",
+      "price": 200000,
+      "image": "images/g4.jpg",
+      "category": "Graphic Cards",
+      "description": "High-performance 4k gaming and high-end applications. High core/thread count, pushing clock speeds."
+    },
+    {
+      "id": "013",
+      "name": "AMD Radeon RX 7900 XTX",
+      "price": 100000,
+      "image": "images/g5.jpg",
+      "category": "Graphic Cards",
+      "description": "Top-tier performance, ideal for demanding tasks and high-end gaming. High core/thread count, pushing clock speeds."
+    },
+    {
+      "id": "014",
+      "name": "AMD Radeon RX 7800 XT",
+      "price": 80000,
+      "image": "images/g6.jpg",
+      "category": "Graphic Cards",
+      "description": "High-performance 4k gaming and high-end applications. High core/thread count, pushing clock speeds."
+    },
+    {
+      "id": "015",
+      "name": "ASUS ROG Maximus Z790 Hero",
+      "price": 170000,
+      "image": "images/m1.jpg",
+      "category": "Motherboards",
+      "description": "High-end gaming, robust power delivery, advanced features, and extensive connectivity. For top-tier Intel builds."
+    },
+    {
+      "id": "016",
+      "name": "MSI MAG B760 Tomahawk WIFI",
+      "price": 170000,
+      "image": "images/m2.jpg",
+      "category": "Motherboards",
+      "description": "High-end gaming, robust power delivery, advanced features, and extensive connectivity. For top-tier Intel builds."
+    },
+    {
+      "id": "017",
+      "name": "Gigabyte Z790 AORUS Elite AX",
+      "price": 150000,
+      "image": "images/m3.jpg",
+      "category": "Motherboards",
+      "description": "High-end gaming, robust power delivery, advanced features, and extensive connectivity. For top-tier Intel builds."
+    },
+    {
+      "id": "018",
+      "name": "ASUS ROG Crosshair X670E Hero",
+      "price": 170000,
+      "image": "images/m4.jpg",
+      "category": "Motherboards",
+      "description": "High-end gaming, robust power delivery, advanced features, and extensive connectivity. For top-tier Intel builds."
+    },
+    {
+      "id": "019",
+      "name": "MSI MAG B650 Tomahawk WIFI",
+      "price": 170000,
+      "image": "images/m5.jpg",
+      "category": "Motherboards",
+      "description": "High-end gaming, robust power delivery, advanced features, and extensive connectivity. For top-tier Intel builds."
+    },
+    {
+      "id": "020",
+      "name": "Gigabyte X670 AORUS Elite AX",
+      "price": 150000,
+      "image": "images/m6.jpg",
+      "category": "Motherboards",
+      "description": "High-end gaming, robust power delivery, advanced features, and extensive connectivity. For top-tier Intel builds."
+    },
+    {
+      "id": "021",
+      "name": "G.Skill Trident Z5 Neo RGB DDR5-6000",
+      "price": 50000,
+      "image": "images/y1.jpg",
+      "category": "Memory",
+      "description": "High-performance RAM with customizable RGB lighting, optimized for gaming and content creation."
+    },
+    {
+      "id": "022",
+      "name": "G.Skill Trident Z5 RGB DDR5-6000",
+      "price": 50000,
+      "image": "images/y2.jpg",
+      "category": "Memory",
+      "description": "High-performance RAM with customizable RGB lighting, optimized for gaming and content creation."
+    },
+    {
+      "id": "023",
+      "name": "Corsair Vengeance LPX DDR4-3200",
+      "price": 40000,
+      "image": "images/y3.jpg",
+      "category": "Memory",
+      "description": "High-performance RAM with customizable RGB lighting, optimized for gaming and content creation."
+    },
+    {
+      "id": "024",
+      "name": "Kingston Fury Beast DDR5",
+      "price": 50000,
+      "image": "images/y4.jpg",
+      "category": "Memory",
+      "description": "High-performance RAM with customizable RGB lighting, optimized for gaming and content creation."
+    },
+    {
+      "id": "025",
+      "name": "Teamgroup T-Force Delta RGB DDR5",
+      "price": 50000,
+      "image": "images/y5.jpg",
+      "category": "Memory",
+      "description": "High-performance RAM with customizable RGB lighting, optimized for gaming and content creation."
+    },
+    {
+      "id": "026",
+      "name": "Samsung 990 PRO NVMe SSD",
+      "price": 88000,
+      "image": "images/s1.jpg",
+      "category": "Storage",
+      "description": "High-performance NVMe SSD with advanced controller, optimized for gaming, content creation, and data storage."
+    },
+    {
+      "id": "027",
+      "name": "Samsung T7 Portable SSD",
+      "price": 80000,
+      "image": "images/s2.jpg",
+      "category": "Storage",
+      "description": "High-performance NVMe SSD with advanced controller, optimized for gaming, content creation, and data storage."
+    },
+    {
+      "id": "028",
+      "name": "SanDisk Extreme Portable SSD",
+      "price": 13000,
+      "image": "images/s3.jpg",
+      "category": "Storage",
+      "description": "High-performance NVMe SSD with advanced controller, optimized for gaming, content creation, and data storage."
+    },
+    {
+      "id": "029",
+      "name": "Western Digital Blue HDD",
+      "price": 80000,
+      "image": "images/s4.jpg",
+      "category": "Storage",
+      "description": "High-performance NVMe SSD with advanced controller, optimized for gaming, content creation, and data storage."
+    },
+    {
+      "id": "030",
+      "name": "Seagate Barracuda HDD",
+      "price": 88000,
+      "image": "images/s5.jpg",
+      "category": "Storage",
+      "description": "High-performance NVMe SSD with advanced controller, optimized for gaming, content creation, and data storage."
+    },
+    {
+      "id": "031",
+      "name": "USB Flash Drives",
+      "price": 7000,
+      "image": "images/s6.jpg",
+      "category": "Storage",
+      "description": "Very portable and lightweight."
+    }
+]
+  

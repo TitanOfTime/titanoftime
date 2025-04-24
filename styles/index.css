@@ -19,7 +19,7 @@ header {
     color: #fff;
     padding: 1rem 2rem;
     position: relative; /* Makes the header element positioned relative to its normal position */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6); /* Adds a shadow to the header*/
 }
 header .logo {
     display: flex;
@@ -38,7 +38,7 @@ header .logo h1 {
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.7); /* Glowing text effect */
 }
 .nav-menu {
-    display: flex;
+    display: flex; /* Makes the navbar items display horizontally side by side */
     align-items: center;
     gap: 1.5rem;
 }
@@ -53,7 +53,7 @@ header .logo h1 {
     text-decoration: none;
     color: #fff;
     font-size: 1rem;
-    transition: color 0.3s ease, transform 0.3s ease;
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition*/
 }
 /* Hover effect on navbar links */
 .nav-menu ul li a:hover {
@@ -210,7 +210,7 @@ table tfoot td {
     gap: 1rem;
     justify-content: space-between;
 }
-.product, .game {
+.product1, .game {
     position: relative;
     flex: 1 1 calc(33.33% - 1rem);
     background: #1a1a1a; 
@@ -219,11 +219,11 @@ table tfoot td {
     text-align: center;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.product:hover, .game:hover {
+.product1:hover, .game:hover {
     transform: scale(1.05);
     box-shadow: 0 4px 12px rgba(255, 64, 129, 0.8); 
 }
-.product img, .game img {
+.product1 img, .game img {
     max-width: 100%;
     height: auto;
     border-radius: 4px;
@@ -240,7 +240,7 @@ table tfoot td {
     text-align: center;
     font-size: 0.9rem;
 }
-.product:hover .hover-text, .game:hover .hover-text {
+.product1:hover .hover-text, .game:hover .hover-text {
     display: block;
 }
 .branches {
@@ -336,21 +336,21 @@ footer .social-icon img:hover {
 /* Mobile view styles */
 @media (max-width: 768px) {
     .hamburger {
-        display: flex;
+        display: flex; 
     }
     .nav-menu {
         display: none;
-        flex-direction: column;
+        flex-direction: column; /* Display menu items vertically on mobile */
         background: #333;
         position: absolute;
         top: 100%;
         right: 0;
         width: 100%;
-        z-index: 1;
+        z-index: 1; /*Ensure the menu is on top of other elements*/
     }
     .menu-toggle:checked + .hamburger + .nav-menu {
         display: flex;
-        background: linear-gradient(135deg, #ff3d3d, #111); 
+        background: linear-gradient(135deg, #ff3d3d, #111); /* Changes from red to black gradient */
     }
     .nav-menu ul {
         flex-direction: column;
@@ -359,7 +359,7 @@ footer .social-icon img:hover {
     .nav-menu ul li a {
         padding: 1rem;
         text-align: center;
-        display: block;
+        display: block; /* Make links take full width*/ 
     }
     .nav-menu ul li a:hover {
         background: #444;
@@ -368,12 +368,108 @@ footer .social-icon img:hover {
         flex-direction: column;
     }
     .feature, .product, .game {
-        flex: 1 1 100%;
+        flex: 1 1 100%; /* Make each feature take full width on mobile view*/
     }
     footer .social-media {
         justify-content: flex-end;
         gap: 0.5rem;
     } 
+    #cart-img {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        top: 1rem;
+        right: 1rem;
+        z-index: 1000; /* Make sure it floats above other elements */
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    #cart-img:hover {
+        transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; /* Smooth transition for scale and brightness */
+        transform: scale(1.1);
+    }
+    #view-cart-btn {
+        border-radius: 50%;
+        border: none;
+    }
+    .product {
+        background: #111;
+        border: 1px solid #333;
+        border-radius: 1rem;
+        padding: 1rem;
+        text-align: center;
+        margin-bottom: 2rem;
+        transition: transform 0.2s ease;
+        box-shadow: 0 0 10px rgba(255, 64, 129, 0.2);
+        flex: 0 1 45%;
+        max-width: 45%;
+        min-width: 140px;
+    }
+    #product-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+    
+    .product:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 20px rgba(255, 64, 129, 0.4);
+    }
+    .product img {
+        width: 80%;
+        height: auto;
+        border-radius: 0.5rem;
+    }
+  
+    .product h3 {
+        margin: 0.5rem 0;
+        color: #fff;
+    }
+  
+    .product p {
+        margin: 0.3rem 0;
+        color: #ccc;
+    }
+  
+    .product .quantity-input {
+        width: 60px;
+        padding: 0.3rem;
+        margin-top: 0.5rem;
+    }
+  
+    .product .add-to-cart {
+        margin-top: 0.7rem;
+        padding: 0.5rem 1rem;
+        background: #ff4081;
+        color: #fff;
+        border: none;
+        border-radius: 0.5rem;
+        cursor: pointer;
+    }
+  
+    .product .add-to-cart:hover {
+        background: #e73370;
+    }
+    .cart-buttons button {
+        background: #ff4081;
+        color: #fff;
+        border: none;
+        border-radius: 0.5rem;
+        padding: 0.3rem 1rem;
+        cursor: pointer;
+        margin: 0.3rem;
+    }
+    #removebtn {
+        background: #ff4081;
+        color: #fff;
+        border: none;
+        border-radius: 0.5rem;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+    }
 }
 /* Desktop view styles */
 @media (min-width: 769px) {
@@ -414,4 +510,104 @@ footer .social-icon img:hover {
     .branch1 iframe, .branch2 iframe {
         height: 200px; 
     }
+    #cart-img {
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        top: 1rem;
+        right: 1rem;
+        z-index: 1000; /* Make sure it floats above other elements */
+        background: transparent;
+        border: none;
+        cursor: pointer;
+    }
+    #cart-img:hover {
+        transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out; /* Smooth transition for scale and brightness */
+        transform: scale(1.1);
+    }
+    #view-cart-btn {
+        border-radius: 50%;
+        border: none;
+    }
+    /* Product container */
+    #product-list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+        padding: 1rem;
+    }
+  
+  /* Individual product card */
+    .product {
+        background: #111;
+        border: 1px solid #333;
+        border-radius: 1rem;
+        padding: 1rem;
+        text-align: center;
+        width: 10px;
+        transition: transform 0.2s ease;
+        box-shadow: 0 0 10px rgba(255, 64, 129, 0.2);
+        flex: 1 1 18%;
+        max-width: 18%;
+        min-width: 160px;
+    }
+  
+    .product:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 0 20px rgba(255, 64, 129, 0.4);
+    }
+  
+    .product img {
+        width: 80%;
+        height: auto;
+        border-radius: 0.5rem;
+    }
+  
+    .product h3 {
+        margin: 0.5rem 0;
+        color: #fff;
+    }
+  
+    .product p {
+        margin: 0.3rem 0;
+        color: #ccc;
+    }
+  
+    .product .quantity-input {
+        width: 60px;
+        padding: 0.3rem;
+        margin-top: 0.5rem;
+    }
+  
+    .product .add-to-cart {
+        margin-top: 0.7rem;
+        padding: 0.5rem 1rem;
+        background: #ff4081;
+        color: #fff;
+        border: none;
+        border-radius: 0.5rem;
+        cursor: pointer;
+    }
+  
+    .product .add-to-cart:hover {
+        background: #e73370;
+    }
+    .cart-buttons button {
+        background: #ff4081;
+        color: #fff;
+        border: none;
+        border-radius: 0.5rem;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+    }
+    #removebtn {
+        background: #ff4081;
+        color: #fff;
+        border: none;
+        border-radius: 0.5rem;
+        padding: 0.5rem 1rem;
+        cursor: pointer;
+    }
 }
+

@@ -1,12 +1,24 @@
 // Name of the cache
-const CACHE_NAME = "my-cache-v1";
+const CACHE_NAME = "my-cache-v3";
 
 // List of assets to cache
 const ASSETS = [
   "/", // Cache the root directory
   "/index.html",
+  "/about.html",
+  "/upcoming-games.html",
+  "/consoles.html",
+  "/gaming-peripherals.html",
+  "/games.html",
+  "/faq.html",
+  "/order.html",
+  "/checkout.html",
+  "/products.json",
   "/styles/index.css",
   "/scripts/script.js",
+  "/scripts/checkout.js",
+  "/manifest.json",
+  "/scripts/order.js",
   "/favicons/favicon.ico",
   "/images/logo.jpg",
   "/images/heroimg.jpg",
