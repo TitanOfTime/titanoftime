@@ -1,13 +1,13 @@
 {
   "name": "Assignment",
   "short_name": "WDOSThing",
-  "start_url": "/index.html",  
+  "start_url": "/index.html",
   "display": "standalone",
   "background_color": "#ffffff",
   "theme_color": "#000000",
   "icons": [
     {
-      "src": "/favicons/android-icon-36x36.png",  
+      "src": "/favicons/android-icon-36x36.png",
       "sizes": "36x36",
       "type": "image/png"
     },
