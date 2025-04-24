@@ -318,6 +318,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-top: auto;
 }
 footer .social-media {
     display: flex;
@@ -463,13 +464,68 @@ footer .social-icon img:hover {
         margin: 0.3rem;
     }
     #removebtn {
-        background: #ff4081;
+        background: #000000;
         color: #fff;
         border: none;
         border-radius: 0.5rem;
         padding: 0.5rem 1rem;
         cursor: pointer;
     }
+    .cart-table {
+        width: 100%;
+        border-collapse: collapse;
+      }
+    
+      .cart-table th, .cart-table td {
+        padding: 10px;
+        text-align: left;
+        background: #ff4081; 
+        color: #fff;
+      }
+    
+      .cart-table thead {
+        display: none; /* Hide the header on small screens */
+      }
+    
+      .cart-table tr {
+        display: block;
+        margin-bottom: 15px;
+        border: 1px solid #c51818;
+        padding: 10px;
+      }
+    
+      .cart-table td {
+        display: block;
+        text-align: left;
+        padding-left: 10px;
+      }
+    
+      .cart-table td::before {
+        content: "";
+        display: block;
+        font-weight: bold;
+        margin-bottom: 5px;
+      }
+    
+      .cart-table td:nth-child(1)::before {
+        content: "Product:";
+      }
+    
+      .cart-table td:nth-child(2)::before {
+        content: "Qty:";
+      }
+    
+      .cart-table td:nth-child(3)::before {
+        content: "Price:";
+      }
+    
+      .cart-table td:nth-child(4)::before {
+        content: "Total:";
+      }
+    
+      .cart-table td:nth-child(5)::before {
+        content: "Remove:";
+      }
 }
 /* Desktop view styles */
 @media (min-width: 769px) {
@@ -608,6 +664,23 @@ footer .social-icon img:hover {
         border-radius: 0.5rem;
         padding: 0.5rem 1rem;
         cursor: pointer;
+    }
+    .cart-table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 1rem;
+    }
+    
+    .cart-table th, .cart-table td {
+        padding: 1rem;
+        text-align: center;
+        border: 1px solid #444;
+    }
+    
+    /* Table header styles */
+    .cart-table th {
+        background: #ff4081;
+        color: #fff;
     }
 }
 

@@ -68,6 +68,7 @@ function updateCart() {
     cartItems.appendChild(row);
   });
   totalPriceEl.textContent = `Total: Rs. ${total}`;
+  localStorage.setItem("persistentCart", JSON.stringify(cart));
 }
 
 function removeItem(index) {
@@ -117,3 +118,11 @@ document.getElementById("checkout-btn").addEventListener("click", () => {
     window.location.href = "checkout.html?t=" + new Date().getTime();
   }
 });
+
+// Load cart from localStorage if available
+const savedCart = localStorage.getItem("persistentCart");
+if (savedCart) {
+  cart = JSON.parse(savedCart);
+  updateCart();
+}
+
