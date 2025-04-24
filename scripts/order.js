@@ -26,6 +26,13 @@ fetch("products.json")
         const quantity = parseInt(
           productDiv.querySelector(".quantity-input").value
         );
+        
+        // Validate quantity
+        if (quantity <= 0) {
+          alert("Quantity must be greater than 0.");
+          return; // Exit the function if quantity is invalid
+        }
+
         addToCart(product, quantity);
         alert("Product added to cart.");
       });
@@ -98,7 +105,15 @@ document.getElementById("apply-favorites").addEventListener("click", () => {
   }
 });
 
+// Checkout validation: Do not allow checkout with an empty cart
 document.getElementById("checkout-btn").addEventListener("click", () => {
-  localStorage.setItem("cartToCheckout", JSON.stringify(cart));
-  window.location.href = "checkout.html?t=" + new Date().getTime();
+  // Check if the cart is empty
+  if (cart.length === 0) {
+    // If the cart is empty, show an alert
+    alert("Your cart is empty. Please add products to the cart before checking out.");
+  } else {
+    // If the cart is not empty, proceed to checkout
+    localStorage.setItem("cartToCheckout", JSON.stringify(cart));
+    window.location.href = "checkout.html?t=" + new Date().getTime();
+  }
 });
