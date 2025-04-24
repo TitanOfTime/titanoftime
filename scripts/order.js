@@ -6,7 +6,7 @@ const cartItems = document.getElementById("cart-items");
 const totalPriceEl = document.getElementById("total-price");
 
 // Load products from JSON
-fetch("../products.json")
+fetch("products.json")
   .then((res) => res.json())
   .then((products) => {
     products.forEach((product) => {
